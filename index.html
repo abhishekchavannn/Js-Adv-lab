@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Advanced JS</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous' />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+  .required:after {
+    content:" *";
+    color: red;
+  }
+</style>
+<body>
+  <section>
+    <center>
+    <h1>Feedback Form</h1>
+    <hr>
+    <br>
+    <form class="form-1" action="index.html" method="post" id="feedback">
+      <div class="fib">
+        <label for="Name" class="required">Your Name</label><br>
+        <input type="text" name="Name" id="name" placeholder="Enter your full name" size="50" required><br>
+        <span class="invalid" id="invalid_Name"></span>
+        <br>
+        <br>
+        <label for="country">City</label><br>
+        <input type="text" name="City" id="city" placeholder="Type the name of the country" size="50"><br>
+        <span class="invalid" id="invalid_City"></span>
+        <br>
+        <br>
+        <label for="phone" class="required">Phone number (Use country code)</label><br>
+        <input type="text" name="Phone" id="phone" placeholder="Eg: +91 12345 67890" required size="50"><br>
+        <span class="invalid" id="invalid_Phone"></span>
+        <br>
+        <br>
+        <label for="mail" class="required">E-mail</label><br>
+        <input type="email" name="Mail" id="mail" placeholder="Enter valid email" size="50" required><br>
+        <span class="invalid" id="invalid_Mail"></span>
+        <br>
+        <br>
+      </div>
+      <label for="feedback-form" class="required">Enter your message</label><br>
+
+      <textarea name="feedbackmsg" id="feedbackmsg" rows="5" cols="50" placeholder="Please enter a message...."></textarea>
+      <br>
+      <span class="invalid" id="invalid_feedbackmsg"></span>
+    </form>
+    <br>
+    <br>
+    <button type="submit" class="submit-btn" id="submit-btn" name="button">Submit!</button>
+  </section>
+  </center>
+
+  <hr>
+  <center>
+  <section id="bill">
+    <h1>Summer ration offer!</h1>
+    <table class="table-1" border="1">
+      <tr>
+        <th style="color: white">Items</th>
+        <th style="color: white">Price/kg</th>
+        <th style="color: white">Quantity(in kgs)</th>
+      </tr>
+      <tr>
+        <td>Potatoes</td>
+        <td id="potato_cost"></td>
+        <td><input type="number" name="pota-qty" id="potato-qty" class="qty" min="0" max="100" value="0"></td>
+      </tr>
+      <tr>
+        <td>Tomatoes</td>
+        <td id="tomato_cost"></td>
+        <td><input type="number" name="toma-qty" id="tomato-qty" class="qty" min="0" max="100" value="0"></td>
+      </tr>
+
+      <tr>
+        <td>Cucumbers</td>
+        <td id="cucumber_cost"></td>
+        <td><input type="number" name="cucu-qty" id="cucumber-qty" class="qty" min="0" max="100" value="0"></td>
+      </tr>
+        <tr>
+          <td></td>
+          <td><button type="button" name="button-price" id = "btn-price" class = "price-btn">Total Price</button></td>
+          <td><input type="number" name="total" value="0.0"  id = "totalPrice" class = "totalprice"></td>
+        </tr>
+    </table>
+
+  </center>
+  </section>
+  <hr>
+  <script src="./script.js"></script>
+</body>
+<footer id="footer" class="foot">
+  <h3 style="color: white">Social links</h3>
+  <br>
+  <a href="https://www.instagram.com/chavanrenders/"><i class="social fab fa-instagram fa-2x"></i></a>
+  <a href="https://github.com/abhishekchavannn" ><i class="social fab fa-github fa-2x"></i></a>
+  <a href="https://www.linkedin.com/in/abhishekchavannn123/"style="text-decoration: none"></a> <i class="social fab fa-linkedin-in fa-2x"></i></a>
+  <a href="https://twitter.com/" style="text-decoration: none"></a><i class="social fab fa-twitter fa-2x"></i></a>
+  <p style="color: white">Made in Js | Lab-3 JS Advanced</p>
+</footer>
+
+</html>

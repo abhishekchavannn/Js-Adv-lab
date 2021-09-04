@@ -1,0 +1,121 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body
+{
+  background-color: #DFEEEA;
+}
+
+.submit-btn{
+  background-color: #152D35;
+  border: none;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 50px;
+  color: white;
+  transition-duration: 0.7s;
+}
+
+.submit-btn:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+hr {
+  border: dotted #345B63;
+  border-width: thick;
+  border-bottom: none;
+  width: 5%;
+  margin: 30px auto;
+}
+
+input[type='number']{
+    width: 80px;
+}
+h1
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #2F5D62;
+  padding: 3%;
+}
+#footer {
+  padding: 4% 13%;
+  text-align: center;
+}
+
+.foot {
+  background-image: linear-gradient(#2F5D62,#345B63);
+}
+.social {
+  padding: 20px 10px;
+  color: white;
+}
+
+.social:hover {
+  color: #A7C4BC;
+}
+textarea, input[type=text], select {
+  border: 1px solid  #5E8B7E;
+  border-radius: 10px;
+  padding: 8px 15px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+textarea, input[type=email], select {
+  border: 1px solid  #5E8B7E;
+  border-radius: 10px;
+  padding: 8px 15px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+textarea, input[type=number], select {
+  border: 1px solid  #5E8B7E;
+  border-radius: 10px;
+  padding: 8px 15px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.invalid
+{
+  color: red;
+  font-size: smaller;
+}
+.price-btn
+{
+  background-color: #152D35;
+  border: none;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: white;
+  transition-duration: 0.7s;
+}
+.price-btn:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+th,td{
+    padding: 10px;
+
+}
+table{
+border-collapse: collapse;
+}
+th{
+  background-color: #152D35;
+}
